@@ -1,0 +1,38 @@
+.Projects{
+  inset: 0;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size:
+    60px 60px,
+    60px 60px;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projects::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 100dvh;
+  background: radial-gradient(circle, #00ff6426 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Projects .content{
+  display: flex;
+  flex-direction: column;
+  gap: 2dvw;
+  position: relative;
+  z-index: 1;
+}
+
+.Projects .projectsViewer{
+  display: flex;
+  gap: 5%;
+}

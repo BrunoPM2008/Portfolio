@@ -1,0 +1,39 @@
+.Aboutme{
+  inset: 0;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(#ffffff0a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+  background-size:
+    60px 60px,
+    60px 60px;
+  height: 100dvh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5dvw;
+}
+
+.Aboutme::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 100dvh;
+  background: radial-gradient(circle, #00ff6426 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+}
+
+.Aboutme .content{
+  display: flex;
+  flex-direction: column;
+  gap: 4dvw;
+  position: relative;
+  z-index: 1;
+}

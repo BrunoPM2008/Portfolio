@@ -1,0 +1,88 @@
+.Contact{
+  inset: 0;
+  background-color: var(--background);
+  background-image:
+    linear-gradient(#ffffff0a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+  background-size:
+    60px 60px,
+    60px 60px;
+  height: 100dvh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5dvw;
+}
+
+.Contact::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 100dvh;
+  background: radial-gradient(circle, #00ff6426 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Contact .texts{
+  display: flex;
+  flex-direction: column;
+  gap: 3dvh;
+}
+
+.Contact .links{
+  display: flex;
+  width: 30dvw;
+  justify-content: space-around;
+
+  & a {
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #04dc54;
+    filter: drop-shadow(0 0 5px #76d7a0);
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 1.3em;
+    transition: .5s;
+  }
+  
+  & a:hover{
+    text-shadow: 0 0 10px #04dc54;
+    transform: scale(1.1)
+  }
+  
+}
+
+.Contact .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 300px;
+  height: 55px;
+  background: radial-gradient(circle, #097d0b, #40a74286, #4569463f);
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #1c6537;
+  
+
+  & svg {
+  font-size: 1.2rem;
+  }
+
+  &:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 5px #4ade80, 0 0 15px rgba(74, 222, 128, 0.4);
+  background: radial-gradient(circle, #30af32, #30af32b0, #4aa34d72);
+  border-color: #4ade80;
+  }
+}

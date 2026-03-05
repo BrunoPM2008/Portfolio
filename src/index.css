@@ -1,0 +1,88 @@
+:root {
+  /* Fonts */
+  --titles: "Manrope";
+  --text-font: "Inter";
+  --code: "JetBrains Mono";
+
+  /* Cores */
+  --background: #050810;
+  --text-color: #EAEAEA;
+  --text-emphasis: #4dba4d;
+  --text-coment: #d3d3d3;
+
+  --green-button: linear-gradient(0deg,    #2e6b3a 0%, #347f47 50%,#3d9454 100%);
+  --green-button-border: #3f8a52;
+
+  --dark-button: linear-gradient(0deg,    #111111 0%,#151515 50%,#1b1b1b 100%);
+  --dark-button-border: #2f2f2f;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+    background-color: #099f4277;
+}
+
+::-webkit-scrollbar {
+    background-color: #0E1113;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4dba4d, #2e6b3a);
+    border-radius: 15px;
+}
+
+h1 {
+  font-family: var(--titles);
+  color: var(--text-color);
+  font-size: 3em;
+  text-shadow: #111 0px 0px 5px, 
+               #111 0px 0px 10px, 
+               #111 0px 0px 15px, 
+               #111 0px 0px 20px, 
+               #111 0px 0px 30px, 
+               #111 0px 0px 40px, 
+               #111 0px 0px 50px, 
+               #111 0px 0px 75px;
+}
+
+p{
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: 1.6em;
+  text-shadow: #111 0px 0px 5px, 
+               #111 0px 0px 10px, 
+               #111 0px 0px 15px, 
+               #111 0px 0px 20px, 
+               #111 0px 0px 30px, 
+               #111 0px 0px 40px, 
+               #111 0px 0px 50px, 
+               #111 0px 0px 75px;  
+}
+
+p span{
+  color: var(--text-emphasis);
+}
+
+hr{
+  border: 0;
+  height: 3px;
+  width: 1000px;
+  background-image: -webkit-linear-gradient(left, transparent, #ccff33, #22b514,#ccff33, transparent);
+}
+
+#html { color: #E34F26; }
+#css { color: #1572B6; }
+#js { color: #F7DF1E; }
+#php { color: #777BB4; }
+#react { color: #61DAFB; }
+#node { color: #339933; }
+#mysql { color: #4479A1; }
+#postgres { color: #336791; }
+#github { color: #FFFFFF; }
+#git { color: #F05032; }
