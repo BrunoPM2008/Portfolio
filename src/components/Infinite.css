@@ -69,3 +69,16 @@ section .infinite .container .circle:nth-child(2){
 section .infinite .container .circle:nth-child(2) ::before{
   animation-delay: calc(-0.1s * var(--i));
 } 
+
+@media screen and (max-width: 878px) {
+section .infinite .container .circle{
+  width: 210px;
+  height: 300px; 
+  margin: 0 -15px;
+}
+
+section .infinite .container .circle span::before{
+  width: 35px;
+  height: 35px;
+}
+}

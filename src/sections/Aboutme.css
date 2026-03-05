@@ -7,7 +7,7 @@
   background-size:
     60px 60px,
     60px 60px;
-  height: 100dvh;
+  min-height: 100dvh;
   min-width: 100%;
   display: flex;
   align-items: center;
@@ -36,4 +36,27 @@
   gap: 4dvw;
   position: relative;
   z-index: 1;
+}
+
+@media screen and (max-width: 878px) {
+  .Aboutme{
+    padding: 1em;
+  }
+
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2dvh;
+  }
+
+  .Aboutme .content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4dvw;
+    position: relative;
+    z-index: 1;
+  }
+
 }

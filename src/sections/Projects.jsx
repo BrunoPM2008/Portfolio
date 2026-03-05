@@ -1,5 +1,6 @@
 import './Projects.css'
 import transformFit from '../assets/transformFit.png'
+import crud from '../assets/Crud.png'
 import WIP from '../assets/WIP.webp'
 import ProjectCard from '../components/ProjectCard'
 import { BsFiletypeHtml } from "react-icons/bs";
@@ -35,7 +36,7 @@ function Projects() {
           />
 
           <ProjectCard 
-          src={transformFit}
+          src={crud}
           titulo="CRUD"
           texto="Este projeto foi desenvolvido com o intuito de aprendizado dos frameWorks Node.js e React"
           stack={

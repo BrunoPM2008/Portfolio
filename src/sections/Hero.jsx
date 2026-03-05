@@ -10,7 +10,7 @@ function Hero() {
       <div className='content'>
         <div className='top'>
           <h1>Bruno Possamai Moro</h1>
-          <p>Desenvolvedor <span>Full Stack</span></p>
+          <span>Desenvolvedor <strong>Full Stack</strong></span>
         </div>
         <div className='bottom'>
           <button onClick={() => document.querySelector(".Projects").scrollIntoView({ behavior: "smooth" })}>

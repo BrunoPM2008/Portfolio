@@ -4,13 +4,13 @@ import { FaGithub } from "react-icons/fa";
 function ProjectCard({titulo, texto, src, link, stack}){
   return(
     <div className="Project">
-      <div>
+      <div className='texts'>
         <img src={src} alt={`Projeto ${titulo}`} />
         <h1>{titulo}</h1>
+        <p className='text'>{texto}</p>
       </div>
 
       <div>
-        <p className='text'>{texto}</p>
         <div className="stack">
           {stack}
         </div>

@@ -35,3 +35,19 @@
 .StackChip svg {
   filter: drop-shadow(0 0 2px currentColor);
 }
+
+@media screen and (max-width: 878px) {
+  .StackChip {
+    gap: 6px;
+    padding: 6px 14px;
+    margin: 1dvh 1dvw;
+  }
+
+  .StackChip svg{
+    font-size: 2rem;
+  }
+
+  .StackChip .text {
+    font-size: 1.3em;
+  }
+}

@@ -86,3 +86,28 @@
   border-color: #4ade80;
   }
 }
+
+@media screen and (max-width: 878px) {
+  .Contact{
+    padding: 1em;
+  }
+
+  .Contact .texts{
+    gap: 2dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Contact .links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .Contact .btn{
+    width: 250px;
+    font-size: 1.3em;
+  }
+}

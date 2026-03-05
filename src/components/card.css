@@ -91,3 +91,28 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 878px) {
+  .card {
+    width: 270px;
+    height: 250px;
+    gap: 20%;
+    padding: 20px;
+  }
+
+  .card .text{
+    gap: 0;
+  }
+
+  .card .icon{
+    font-size: 5em;
+  }
+
+  .card h1 {
+    font-size: 1.5em;
+  }
+
+  .card span {
+    font-size: .9em;
+    line-height: 25px;
+  }
+}

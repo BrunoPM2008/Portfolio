@@ -1,7 +1,3 @@
-#root {
-  text-align: center;
-}
-
 .Hero{
   inset: 0;
   background-color: var(--background);
@@ -76,3 +72,18 @@
   position: relative;
   z-index: 1;
 }
+
+@media screen and (max-width: 878px) {
+  .Hero{
+    padding: 1em;
+  }
+
+  .bottom button{
+    padding: 6px 20px;
+    margin: 0 2dvw;
+  }
+  .Hero .content{
+    gap: 10dvw;
+  }
+}
+

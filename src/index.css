@@ -65,7 +65,27 @@ p{
                #111 0px 0px 75px;  
 }
 
+span{
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: 1.6em;
+  text-shadow: #111 0px 0px 5px, 
+               #111 0px 0px 10px, 
+               #111 0px 0px 15px, 
+               #111 0px 0px 20px, 
+               #111 0px 0px 30px, 
+               #111 0px 0px 40px, 
+               #111 0px 0px 50px, 
+               #111 0px 0px 75px;  
+
+ & strong{
+  color: var(--text-emphasis);
+  margin: 0 5px;
+ }
+}
+
 p span{
+  font-size: 1.6em;
   color: var(--text-emphasis);
 }
 
@@ -86,3 +106,26 @@ hr{
 #postgres { color: #336791; }
 #github { color: #FFFFFF; }
 #git { color: #F05032; }
+
+@media screen and (max-width: 878px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  p{
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  p span{
+    font-size: 1.2em;
+  }
+
+  span{
+    font-size: 1.3em;
+  }
+
+  hr{
+    width: 350px;
+  }
+}
