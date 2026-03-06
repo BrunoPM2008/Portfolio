@@ -8,7 +8,7 @@
     60px 60px,
     60px 60px;
   height: 100dvh;
-  min-width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

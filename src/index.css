@@ -23,10 +23,6 @@
   box-sizing: border-box;
 }
 
-body{
-  overflow-x: hidden;
-}
-
 ::selection {
     background-color: #099f4277;
 }
@@ -96,8 +92,16 @@ p span{
 hr{
   border: 0;
   height: 3px;
-  width: 1000px;
+    width: 100%;
   background-image: -webkit-linear-gradient(left, transparent, #ccff33, #22b514,#ccff33, transparent);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 #html { color: #E34F26; }
@@ -130,6 +134,7 @@ hr{
   }
 
   hr{
-    width: 350px;
+    width: 90%;
+    margin: 0 auto;
   }
 }

@@ -73,20 +73,31 @@ const ParticlesContainer = () => {
   );
 
   return (
-    <div style={{ position: "absolute", width: "100%", height: "10dvh" }}>
-      {init && (
-        <Particles
-          id="tsparticles"
-          options={options}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-          }}
-        />
-      )}
-    </div>
-  );
+  <div
+    style={{
+      position: "absolute",
+      width: "100%",
+      height: "10vh",
+      overflow: "hidden",
+      left: 0,
+      top: 0,
+    }}
+  >
+    {init && (
+      <Particles
+        id="tsparticles"
+        options={options}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          top: 0,
+          left: 0,
+        }}
+      />
+    )}
+  </div>
+);
 };
 
 export default ParticlesContainer;
